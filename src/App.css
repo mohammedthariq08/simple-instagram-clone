@@ -1,0 +1,255 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+html,body{
+  height:100%;
+  overflow:hidden;
+}
+.container{
+  height:100vh;
+  display:flex;
+  font-family:'Montserrat', sans-serif;
+}
+.sidebar{
+  width:20%;
+}
+.feed{
+  width:50%;
+  overflow-y:auto;
+  scrollbar-width:none;
+}
+.suggesions{
+  width:30%;
+  overflow-y:auto;
+}
+.instagram_text{
+  width:110px;
+  margin-top:33px;
+  margin-left:20px;
+  margin-bottom:35px;
+}
+.sidebarContents{
+  display:flex;
+  flex-direction:column;
+  font-size:14px;
+}
+.sidebar_icons div{
+  margin-bottom:22px;
+  margin-left:23px;
+}
+.more_icon{
+  margin-top:10px;
+  margin-left:23px;
+  font-size:14px;
+  display:flex;
+  flex-direction:row;
+}
+.sidebar_icons .bi{
+  margin-right:15px;
+  font-size:25px;
+}
+.more_icon .bi{
+  font-size:31px;
+  margin-right:10px;
+}
+.more{
+  margin-top:10px;
+}
+.stories{
+  height:110px;
+}
+.image{
+  height:45px;
+  width:45px;
+  border-radius:50%;
+}
+.postProfilePic{
+  display:flex;
+}
+.postPicture{
+  height:75vh;
+  width:36vw;
+  margin:15px 0;
+}
+.likeAndShare .bi{
+  font-size:20px;
+  margin-right:15px;
+}
+.likeAndShare b{
+  margin-right:20px; 
+}
+.likeAndShare{
+  margin-bottom:10px;
+}
+.caption{
+  margin-bottom:20px;
+}
+.postProfilePic img{
+  margin-right:15px;
+}
+.postProfilePic h5{
+  font-size:25px;
+  margin-top: 7px;
+}
+.postContainer{
+  display:flex;
+  justify-content:center;
+}
+.profile small{
+  margin-top:20px;
+  font-size:15px;
+  margin-left:95px;
+  color:blue;
+}
+.profile .image{
+  margin-left:55px;
+  height:35px;
+  width:35px;
+  margin-top:10px;
+}
+.profile h5{
+  font-size:15px;
+  margin-top:17px;
+}
+.suggested .image{
+  margin-left:55px;
+  height:35px;
+  width:35px;
+  margin-top:10px;
+}
+.suggested h5{
+  font-size:15px;
+  margin-top:17px;
+}
+.suggested{
+  margin-top:25px;
+}
+.sugginter{
+  display:flex;
+  margin-left:40px;
+  margin-top:20px;
+}
+.sugginter b{
+  margin-left:73px;
+}
+.suggested button{
+  background-color:blue;
+  margin-left:auto;
+  margin-top:16px;
+  margin-right:90px;
+  border:none;
+  color:white;
+  width:50px;
+  height:23px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.storyPart{
+  display:flex;
+}
+.storyImg{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+}
+.storyPart p{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width:50px;
+}
+.gradient-border{
+  margin-right:20px;
+  margin-top:10px;
+  width:49px;
+  height:49px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(45deg,#ff00ff,#ff6600,#ffcc00);
+}
+.storySection{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.storyImage{
+  height:100vh;
+  width:30vw;
+}
+.storySection .bi{
+  font-size:40px;
+  margin-right:20px;
+  margin-left:20px;
+}
+.sidebar_icons div:hover{
+  cursor:pointer;
+}
+.profileimg1{
+  height:100px;
+  width:100px;
+  border-radius:50%;
+}
+.profilediv{
+  display:flex;
+}
+.profilename{
+  margin-top:40px;
+  margin-left:30px;
+  font-size:20px;
+  font-family:'Montserrat', sans-serif;
+}
+.profile1{
+  margin:30px;
+  display:flex;
+  flex-direction:column;
+}
+.profileName{
+  width:200px;
+  height:30px;
+  margin-top:20px;
+  border-radius:5px;
+  padding:3px;
+  border:1px solid black;
+}
+.profilePicture{
+  width:200px;
+  height:30px;
+  margin-top:20px;
+  border-radius:5px;
+  padding:3px;
+  border:1px solid black;
+}
+.profileButton{
+  width:100px;
+  height:30px;
+  margin-top:20px;
+  background-color:blue;
+  color:white;
+  border-radius:15px;
+  cursor:pointer;
+  border:none;
+}
+.followersList{
+  margin-top:20px;
+}
+.follower{
+  margin-top:4px;
+  display:grid;
+  grid-template-columns:100px 80px;
+  grid-template-rows:30px;
+  row-gap:20px;
+  column-gap:20px;
+}
+.unfollowBtn{
+  margin-left:20px;
+  height:24px;
+  background-color:blue;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}

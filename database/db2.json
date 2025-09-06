@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "user": {
+        "id": 101,
+        "username": "john_doe",
+        "profile_pic": "Instagram/src/assets/profilepic1.jpg"
+      },
+      "image": "sInstagram/src/assets/post1.jpg",
+      "caption":"Exploring the beauty of nature 🌲 #wanderlust",
+      "Likes": 120,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Wow! Amazing shot! 📸"
+        },
+        {
+          "user": "mark_92",
+          "comment": "Where is this place?"
+        }
+      ],
+      "timestamp": "2025-02-11T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 102,
+        "username": "emma_smith",
+        "profile_pic": "Instagram/src/assets/profilepic2.jpg"
+      },
+      "image": "Instagram/src/assets/post2.jpg",
+      "caption": "Morning workout done right 💪 #fitlife",
+      "Likes": 87,
+      "comments": [
+        {
+          "user": "john_doe",
+          "comment": "Keep it up! 💪"
+        },
+        {
+          "user": "mike_travel",
+          "comment": "Great start to the day!"
+        }
+      ],
+      "timestamp": "2025-03-02T08:15:00Z"
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 103,
+        "username": "mike_travel",
+        "profile_pic": "Instagram/src/assets/post3.jpg"
+      },
+      "image": "Instagram/src/assets/profilepic3.jpg",
+      "caption": "Hiking adventures in the Alps 🏔️",
+      "Likes": 200,
+      "comments": [
+        {
+          "user": "emma_smith",
+          "comment": "Looks incredible!"
+        },
+        {
+          "user": "alice_wonder",
+          "comment": "Adding this to my bucket list!"
+        }
+      ],
+      "timestamp": "2025-04-10T10:45:00Z"
+    }
+  ]
+}
