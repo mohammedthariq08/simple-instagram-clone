@@ -3,8 +3,8 @@ import './index.css'
 import App from './App.jsx'
 import Viewstory from "./Viewstory.jsx";
 import Profile from './Profile1.jsx';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-const router=createBrowserRouter([
+import {createHashRouter, RouterProvider} from "react-router-dom";
+const router=createHashRouter([
   {
     path:'/',
     element:<App/>
