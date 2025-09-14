@@ -9,11 +9,11 @@ function profile() {
   let [followers, setFollowers]=useState([]);
   let [unfollow, setUnfollow]=useState(0);
   useEffect(()=>{
-    axios.get("https://database-7.onrender.com/profile")
+    axios.get("https://database-8.onrender.com/profile")
     .then((data)=>{setProfile(data.data); console.log(data)})
     .catch(err=>{console.log(err)})
 
-    axios.get('https://database-7.onrender.com/followers')
+    axios.get('https://database-8.onrender.com/followers')
     .then((data)=>{setFollowers(data.data)})
     .catch(err=>{console.log(err)})
   },[unfollow])
@@ -40,7 +40,7 @@ function profile() {
       (
         <>
         <div className="profilediv">
-          <img src={profile.profile_pic} className="profileimg1"></img>
+          <img src={`https://database-8.onrender.com/profile${profile.profile_pic}`} className="profileimg1"></img>
           <h4 className="profilename">{profile.username}</h4>
         </div>
         <input className="profileName" type="text" value={profile.username} name="username" onChange={handleOnChange}/>

@@ -17,10 +17,10 @@ function Posts() {
             {posts.map((data)=>(
                 <div key={data.id} className="feedPosts">
                     <div className="postProfilePic">
-                        <img className="image" src={data.user.profile_pic} alt="profile picture"></img>
+                        <img className="image" src={`https://database-8.onrender.com/posts${data.user.profile_pic}`} alt="profile picture"></img>
                         <h5>{data.user.username}</h5>
                     </div>
-                    <img className="postPicture" src={data.image} alt="post picture"></img>
+                    <img className="postPicture" src={`https://database-8.onrender.com/posts${data.image}`} alt="post picture"></img>
                     <div className="likeAndShare">
                         <i className="bi bi-suit-heart"></i><b>{data.Likes} Likes</b>
                         <i className="bi bi-chat"></i>

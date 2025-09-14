@@ -22,9 +22,9 @@ function Viewstory() {
     <div>
         {story ? 
         <div className="storySection">
-          <Link to={`http://localhost:5173/story/${Number(id)-1}/${total}`}><i className="bi bi-arrow-left-square"></i></Link>
-          <img src={story.image} alt="story image" className="storyImage"></img> 
-          <Link to={`http://localhost:5173/story/${Number(id)+1}/${total}`}><i className="bi bi-arrow-right-square"></i></Link>
+          <Link to={`https://mohammedthariq08.github.io/simple-instagram-clone/#/story/${Number(id)-1}/${total}`}><i className="bi bi-arrow-left-square"></i></Link>
+          <img src={`https://database-8.onrender.com/stories${story.image}`} alt="story image" className="storyImage"></img> 
+          <Link to={`https://mohammedthariq08.github.io/simple-instagram-clone/#/story/${Number(id)+1}/${total}`}><i className="bi bi-arrow-right-square"></i></Link>
         </div> 
         : 
         <div>loading...</div>}

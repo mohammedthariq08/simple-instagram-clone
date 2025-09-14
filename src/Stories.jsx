@@ -19,7 +19,7 @@ function Stories() {
           {Story.map((story)=>(
             <div key={story.id} onClick={()=>{navigate(`/story/${story.id}/${total}`)}}>
               <div className="gradient-border">
-                <img className="storyImg" src={story.user.profile_pic}></img>
+                <img className="storyImg" src={`https://database-8.onrender.com/stories${story.user.profile_pic}`}></img>
               </div>
               <p>{story.user.username}</p>
             </div>

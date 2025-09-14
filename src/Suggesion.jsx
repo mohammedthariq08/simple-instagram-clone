@@ -27,7 +27,7 @@ function Suggesions() {
       <div className="profile">
         {profile ? 
         <div className="postProfilePic">
-          <img className="image" src={profile.profile_pic} alt=" profile picture"></img>
+          <img className="image" src={`https://database-8.onrender.com/profile${profile.profile_pic}`} alt=" profile picture"></img>
           <h5>{profile.username}</h5>
           <small>Switch</small>
         </div>
@@ -44,7 +44,7 @@ function Suggesions() {
           (<div className="suggested">
             {suggesions.map((data)=>(
               <div key={data.id} className="postProfilePic">
-                <img className="image" src={data.profile_pic} alt="Profile Picture"></img>
+                <img className="image" src={`https://database-8.onrender.com/sugessions${data.profile_pic}`} alt="Profile Picture"></img>
                 <h5>{data.username}</h5>
                 <button className="followButton" onClick={()=>handleFollow(data.id,data.username)}>Follow</button>
               </div>)
