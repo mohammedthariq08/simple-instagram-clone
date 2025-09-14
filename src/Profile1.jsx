@@ -24,12 +24,12 @@ function profile() {
     }))
   }
   const handleUpdate= async ()=>{
-    axios.put('https://database-7.onrender.com/profile',profile)
+    axios.put('https://database-8.onrender.com/profile',profile)
     .then(console.log("updated"))
     .catch(err=>{console.log(err)})
   }
   const handleFollow=async(id)=>{
-    axios.delete(`https://database-7.onrender.com/followers/${id}`)
+    axios.delete(`https://database-8.onrender.com/followers/${id}`)
     .then(()=>alert("unfollowed"))
     .then(()=>setUnfollow(!unfollow))
     .catch(err=>{console.log(err)})

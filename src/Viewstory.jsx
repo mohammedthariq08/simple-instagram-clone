@@ -7,7 +7,7 @@ function Viewstory() {
     let {id,total}= useParams();
     let [story, setStory]=useState(null);
     useEffect(()=>{
-        fetch(`https://database-7.onrender.com/stories/${id}`)
+        fetch(`https://database-8.onrender.com/stories/${id}`)
         .then((data)=> data.json())
         .then((data)=> setStory(data))
         .catch(err=>console.log(err)); 
