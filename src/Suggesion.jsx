@@ -7,18 +7,18 @@ function Suggesions() {
     let [profile, setProfile]=useState(null);
     let [suggesions, setSuggesion]=useState([]);
     useEffect(()=>{
-      fetch("http://localhost:3000/profile")
+      fetch("https://database-7.onrender.com/profile")
       .then(data=>data.json())
       .then(data=>setProfile(data))
       .catch(err=>console.log(err))
 
-      fetch("http://localhost:3000/sugessions")
+      fetch("https://database-7.onrender.com/sugessions")
       .then(data=>data.json())
       .then(data=>setSuggesion(data))
       .catch(err=>console.log(err))
     },[]);
     let handleFollow=(id,username)=>{
-      axios.post('http://localhost:3000/followers', {"id":id,"username":username})
+      axios.post('https://database-7.onrender.com/followers', {"id":id,"username":username})
       .then(()=>alert("followed"))
       .catch(err=>{console.log(err)})
     }

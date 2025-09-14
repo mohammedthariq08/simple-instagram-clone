@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 function Posts() {
     let [posts, setPosts]=useState([]);
     useEffect(()=>{
-        fetch("http://localhost:3000/posts")
+        fetch("https://database-7.onrender.com/posts")
         .then((data)=>data.json())
         .then((data)=>setPosts(data))
         .catch((err)=>console.log(err))

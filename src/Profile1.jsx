@@ -9,11 +9,11 @@ function profile() {
   let [followers, setFollowers]=useState([]);
   let [unfollow, setUnfollow]=useState(0);
   useEffect(()=>{
-    axios.get("http://localhost:3000/profile")
+    axios.get("https://database-7.onrender.com/profile")
     .then((data)=>{setProfile(data.data); console.log(data)})
     .catch(err=>{console.log(err)})
 
-    axios.get('http://localhost:3000/followers')
+    axios.get('https://database-7.onrender.com/followers')
     .then((data)=>{setFollowers(data.data)})
     .catch(err=>{console.log(err)})
   },[unfollow])
@@ -24,12 +24,12 @@ function profile() {
     }))
   }
   const handleUpdate= async ()=>{
-    axios.put('http://localhost:3000/profile',profile)
+    axios.put('https://database-7.onrender.com/profile',profile)
     .then(console.log("updated"))
     .catch(err=>{console.log(err)})
   }
   const handleFollow=async(id)=>{
-    axios.delete(`http://localhost:3000/followers/${id}`)
+    axios.delete(`https://database-7.onrender.com/followers/${id}`)
     .then(()=>alert("unfollowed"))
     .then(()=>setUnfollow(!unfollow))
     .catch(err=>{console.log(err)})

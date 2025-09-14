@@ -6,7 +6,7 @@ function Stories() {
   let navigate=useNavigate();
   let [Story, setStory]=useState([]);
   useEffect(()=>{
-    fetch("http://localhost:3000/stories")
+    fetch("https://database-7.onrender.com/stories")
     .then((data)=>data.json())
     .then((data)=>setStory(data))
     .catch(err=>console.log(err))
